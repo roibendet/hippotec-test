@@ -81,7 +81,7 @@ export default class Root extends React.Component {
 
   languageOnChange(e) {
     const selectedLanguage = e.target.value;
-    this.setState({lang: selectedLanguage}, () => this.getFlowersDataFromServer())
+    this.setState({lang: selectedLanguage, flowersToDisplay: []}, () => this.getFlowersDataFromServer())
   }
 
   flowersSearch(e) {
