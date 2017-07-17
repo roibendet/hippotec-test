@@ -1,4 +1,5 @@
 import React from 'react';
+import Flower from '../flower/flower';
 import './root.css';
 
 
@@ -10,7 +11,7 @@ export default class Root extends React.Component {
       flowers: [],
       flowersToDisplay: [],
       siteText: {
-        title : "Welcome to Little Shop Of Horrors",
+        title: "Welcome to Little Shop Of Horrors",
         SearchForYourFlower: "Search for your flower",
         SearchHere: "Search here",
         ChangeLanguageTo: "Change language to:"
@@ -26,47 +27,43 @@ export default class Root extends React.Component {
 
 
   componentDidMount() {
-    this.getDataFromServer()
+    this.getFlowersDataFromServer()
   }
 
-  getDataFromServer() {
+  getFlowersDataFromServer() {
 
     const wantedLanguage = {lang: this.state.lang};
     const that = this;
 
-
-    /**
-     * Flowers Data
-     */
     const flowersXHR = new XMLHttpRequest();
+
     flowersXHR.open('post', 'http://localhost:3000/listOfAllFlowers');
     flowersXHR.setRequestHeader('Content-Type', 'application/json');
     flowersXHR.addEventListener("load", () => {
       const allFlowersFromServer = JSON.parse(flowersXHR.responseText).flowerlist;
       that.setState({flowers: allFlowersFromServer});
-      this.flowersListBuilder()
+      this.flowersListBuilder();
+      this.getSiteTextDataFromServer();
     });
     flowersXHR.send(JSON.stringify(wantedLanguage));
 
-    /**
-     * Site Language Data
-     */
+  }
+
+  getSiteTextDataFromServer() {
+
+    const wantedLanguage = {lang: this.state.lang};
+    const that = this;
     const siteTextXHR = new XMLHttpRequest();
 
     siteTextXHR.open('post', 'http://localhost:3000/siteText');
     siteTextXHR.setRequestHeader('Content-Type', 'application/json');
     siteTextXHR.addEventListener("load", () => {
       const siteTextFromServer = JSON.parse(siteTextXHR.responseText);
-      // that.siteText = {siteTextFromServer};
-      // that.setState({flowers: allFlowersFromServer});
-      // this.flowersListBuilder()
-      // console.info('this',that.siteText);
-      that.setState({siteText:siteTextFromServer});
+      that.setState({siteText: siteTextFromServer});
 
     });
     siteTextXHR.send(JSON.stringify(wantedLanguage));
   }
-
 
 
   flowersListBuilder() {
@@ -77,23 +74,14 @@ export default class Root extends React.Component {
 
 
     return relevantList.map((flower, i) => {
-      return <div className="flower-container" key={i}><h4>{flower.name}</h4>
-
-        <div className="flower-picture"
-             style={{backgroundImage: `url("https://raw.githubusercontent.com/roibendet/wedding/master/${flower.photo}")`}}/>
-
-        <p>{flower.instructions}</p>
-
-        <strong>{flower.season.toUpperCase()}</strong>
-
-      </div>
+      return <Flower key={i} data={flower}/>
     })
 
   }
 
   languageOnChange(e) {
     const selectedLanguage = e.target.value;
-    this.setState({lang: selectedLanguage}, () => this.getDataFromServer())
+    this.setState({lang: selectedLanguage}, () => this.getFlowersDataFromServer())
   }
 
   flowersSearch(e) {
@@ -120,51 +108,64 @@ export default class Root extends React.Component {
   }
 
   render() {
+
     return (
-<div>
-    <h1 className="main-container">{this.state.siteText.title}</h1>
+
+      <div>
+
+        <h1 className="main-container">{this.state.siteText.title}</h1>
+
+        <div className="main-container">
+
+          <div className="input-select-container">
+
+            <label>{this.state.siteText.SearchForYourFlower}
+
+              <input list="flowers"
+                     onChange={this.flowersSearch}
+                     placeholder={this.state.siteText.SearchHere}
+                     className="input-select-design"
+              />
+
+              <datalist id="flowers">
+
+                {this.getListOfOptionsElements()}
+
+                <option value={'summer'}>Summer</option>
+                <option value={'fall'}>Fall</option>
+                <option value={'winter'}>Winter</option>
+                <option value={'spring'}>Spring</option>
+
+              </datalist>
+
+            </label>
 
 
+            <label>{this.state.siteText.ChangeLanguageTo}
 
-      <div className="main-container">
-        <div className="input-select-container">
-          <label>{this.state.siteText.SearchForYourFlower}
+              <select name="select"
+                      className="input-select-design"
+                      onChange={this.languageOnChange}>
 
-            <input list="flowers"
-                   onChange={this.flowersSearch}
-                   placeholder={this.state.siteText.SearchHere}
-                   className="input-select-design"/>
-            <datalist id="flowers">
+                <option value="EN" defaultValue>English</option>
+                <option value="DE">Dutch</option>
+                <option value="FR">French</option>
 
-              {this.getListOfOptionsElements()}
+              </select>
 
-              <option value={'summer'}>Summer</option>
-              <option value={'fall'}>Fall</option>
-              <option value={'winter'}>Winter</option>
-              <option value={'spring'}>Spring</option>
-            </datalist>
+            </label>
 
+          </div>
 
-          </label>
+          <div className="flowers-container">
 
+            {this.flowersListBuilder()}
 
-          <label>{this.state.siteText.ChangeLanguageTo}
-            <select name="select" className="input-select-design" onChange={this.languageOnChange}>
-              <option value="EN" defaultValue>English</option>
-              <option value="DE">Dutch</option>
-              <option value="FR">French</option>
-            </select>
-          </label>
+          </div>
 
         </div>
 
-        <div className="flowers-container">
-
-
-          {this.flowersListBuilder()}
-        </div>
       </div>
-</div>
     )
   }
 }
