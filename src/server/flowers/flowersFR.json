@@ -1,0 +1,83 @@
+{
+  "flowerlist": [
+    {
+      "category": "Arbustes",
+      "instructions": "Grand double. Un bon producteur, une bosse lourde. Plantes précoce à mi-saison, acide. Plantez dans un sol humide et bien drainé avec un pH de 4,0-5,5.",
+      "photo": "california_snow.jpg",
+      "name": "Azalée",
+      "season": "été",
+      "productId": 1
+    },
+    {
+      "category": "Arbustes",
+      "instructions": "De belles grandes fleurs violettes royales ornent de jolies feuilles vertes satinées qui deviennent orange / rouge par temps froid. Augmente jusqu'à 18 pieds, ou prune chaque année pour raccourcir.",
+      "photo": "princess_flower.jpg",
+      "name": "Tibouchina Semidecandra",
+      "season": "été",
+      "productId": 2
+    },
+    {
+      "category": "Arbustes",
+      "instructions": "Fleurs en été, 20 à 35 pouces de hauteur. Fertiliser régulièrement pour obtenir les meilleurs résultats. Plein soleil, tolérant à la sécheresse.",
+      "photo": "haight_ashbury.jpg",
+      "name": "Hibiscus",
+      "season": "été",
+      "productId": 3
+    },
+    {
+      "category": "Arbustes",
+      "instructions": "Forêt rapide, herbacée, arbuste atteignant jusqu'à 30 pouces de hauteur, formant un buisson arrondi et dense.",
+      "photo": "mona_lavender.jpg",
+      "name": "Plectranthus",
+      "season": "hiver",
+      "productId": 4
+    },
+    {
+      "category": "Arbustes",
+      "instructions": "Croissance lente, verticale vers un arbuste qui se répand. Oval, brillant, feuilles et fleurs abondantes d'hiver à printemps.",
+      "photo": "camellia.jpg",
+      "name": "Camellia Japonica",
+      "season": "hiver",
+      "productId": 5
+    },
+    {
+      "category": "Arbustes",
+      "instructions": "La vigne ligneuse épineuse brouille sur d'autres plantes avec leurs épines accrochées. Sans parasites.",
+      "photo": "bougainvillea.jpg",
+      "name": "Bougainvillea Spectabilis",
+      "season": "hiver",
+      "productId": 6
+    },
+    {
+      "category": "Arbustes",
+      "instructions": "Les fleurs de couleur violet foncé ont une habitude de croissance arrondie de 3 pieds de hauteur. Plante en plein soleil. Eau régulièrement.",
+      "photo": "rosa_burgundy.jpg",
+      "name": "Rosa Bourgogne",
+      "season": "printemps",
+      "productId": 7
+    },
+    {
+      "category": "Arbustes",
+      "instructions": "Les fleurs de couleur violet foncé ont une habitude de croissance arrondie de 3 pieds de hauteur. Plante en plein soleil. Eau régulièrement.",
+      "photo": "rosa_iceberg.jpg",
+      "name": "rose Iceberg",
+      "season": "printemps",
+      "productId": 8
+    },
+    {
+      "category": "Plantes de conteneurs",
+      "instructions": "Ils ne prospèrent pas à l'intérieur, où la lumière est trop faible et l'humidité trop basse pour qu'elles se développent correctement.",
+      "photo": "bonsai.jpg",
+      "name": "Un bonsai",
+      "season": "printemps",
+      "productId": 9
+    },
+    {
+      "category": "Plantes de conteneurs",
+      "instructions": "Fleurs en continu depuis le début du printemps jusqu'au premier gel. Plein soleil ou nuance partielle, sol humide et bien drainé.",
+      "photo": "calibrachoa.jpg",
+      "name": "Calibrachoa Noa",
+      "season": "tomber",
+      "productId": 10
+    }]
+}

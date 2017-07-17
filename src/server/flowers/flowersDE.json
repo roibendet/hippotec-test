@@ -1,0 +1,84 @@
+{
+  "flowerlist": [
+    {
+      "category": "Sträucher",
+      "instructions": "Große Doppel. Gute Züchter, schwere Blüte. Frühe bis Mitte der Saison, Säure liebende Pflanzen. Pflanze in feuchtem, gut durchlässigem Boden mit einem pH-Wert von 4,0-5,5.",
+      "photo": "california_snow.jpg",
+      "name": "Azalee",
+      "season": "Sommer",
+      "productId": 1
+    },
+    {
+      "category": "Sträucher",
+      "instructions": "Schöne große königliche lila Blüten schmücken attraktive satinierte grüne Blätter, die orange \\ / rot bei kaltem Wetter werden. Wächst bis zu 18 Fuß, oder Pflaumen jährlich zu verkürzen.",
+      "photo": "princess_flower.jpg",
+      "name": "Tibouchina Semidecandra",
+      "season": "Sommer",
+      "productId": 2
+    },
+    {
+      "category": "Sträucher",
+      "instructions": "Blüht im Sommer, 20-35 Zoll hoch. Befruchten Sie regelmäßig für beste Ergebnisse. Volle Sonne, Dürre tolerant.",
+      "photo": "haight_ashbury.jpg",
+      "name": "Hibiskus",
+      "season": "Sommer",
+      "productId": 3
+    },
+    {
+      "category": "Sträucher",
+      "instructions": "Schnell wachsend, krautig, Strauch bis zu 30 cm in der Höhe und bildet einen abgerundeten, dichten Busch.",
+      "photo": "mona_lavender.jpg",
+      "name": "Plectranthus",
+      "season": "winter",
+      "productId": 4
+    },
+    {
+      "category": "Sträucher",
+      "instructions": "Langsam wächst, aufrecht zu verbreiten Strauch. Oval, glänzend, Blätter und reichlich Winter bis Frühjahr blühende Blumen.",
+      "photo": "camellia.jpg",
+      "name": "Kamelie Japonica",
+      "season": "winter",
+      "productId": 5
+    },
+    {
+      "category": "Sträucher",
+      "instructions": "Dornige waldige Rebe krabbelt über andere Pflanzen mit ihren Haken Dornen. Scherzfrei",
+      "photo": "bougainvillea.jpg",
+      "name": "Bougainvillea Spectabilis",
+      "season": "winter",
+      "productId": 6
+    },
+    {
+      "category": "Sträucher",
+      "instructions": "Tiefe lila gefärbte Blumen buschig abgerundet Wachstum Gewohnheit auf 3 Meter hoch. Pflanze in voller Sonne. Wasser regelmäßig.",
+      "photo": "rosa_burgundy.jpg",
+      "name": "Rosa Burgund",
+      "season": "Frühling",
+      "productId": 7
+    },
+    {
+      "category": "Sträucher",
+      "instructions": "Tief lila gefärbte Blumen buschig abgerundet Wachstum Gewohnheit auf 3 Meter hoch. Pflanze in voller Sonne. Wasser regelmäßig.",
+      "photo": "rosa_iceberg.jpg",
+      "name": "rosa Eisberg",
+      "season": "Frühling",
+      "productId": 8
+    },
+    {
+      "category": "Behälterpflanzen",
+      "instructions": "Sie gedeihen nicht drinnen, wo das Licht zu dunkel ist und die Feuchtigkeit zu niedrig ist, damit sie richtig wachsen.",
+      "photo": "bonsai.jpg",
+      "name": "Bonsai Baum",
+      "season": "Frühling",
+      "productId": 9
+    },
+    {
+      "category": "Behälterpflanzen",
+      "instructions": "Blüht kontinuierlich vom frühen Frühling zum ersten Frost. Voller Sonne oder Teil Schatten, feuchter, gut durchlässiger Boden.",
+      "photo": "calibrachoa.jpg",
+      "name": "Calibrachoa Noa",
+      "season": "fallen",
+      "productId": 10
+    }
+  ]
+}

@@ -1,19 +1,33 @@
 {
-  "name": "hippotec-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "name": "Hippotec-test",
+  "version": "0.2.0",
+  "description": "hippotec-test",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "webpack-dev-server --hot --inline",
+    "postinstall": "webpack -p --config webpack.prod.config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/roibendet/hippotec-test.git"
-  },
-  "author": "roi bendet",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/roibendet/hippotec-test/issues"
+  "dependencies": {
+    "babel-core": "^6.7.6",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "body-parser": "^1.17.2",
+    "css-loader": "^0.23.1",
+    "express": "^4.13.4",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.12.14"
   },
-  "homepage": "https://github.com/roibendet/hippotec-test#readme"
+  "devDependencies": {
+    "babel-preset-env": "0.0.3",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.10.0"
+  }
 }

@@ -1,0 +1,83 @@
+{
+  "flowerlist": [
+    {
+      "category": "Shrubs",
+      "instructions": "Large double. Good grower, heavy bloomer. Early to mid-season, acid loving plants. Plant in moist well drained soil with pH of 4.0-5.5.",
+      "photo": "california_snow.jpg",
+      "name": "Azalea",
+      "season": "summer",
+      "productId": 1
+    },
+    {
+      "category": "Shrubs",
+      "instructions": "Beautiful large royal purple flowers adorn attractive satiny green leaves that turn orange\\/red in cold weather. Grows to up to 18 feet, or prune annually to shorten.",
+      "photo": "princess_flower.jpg",
+      "name": "Tibouchina Semidecandra",
+      "season": "summer",
+      "productId": 2
+    },
+    {
+      "category": "Shrubs",
+      "instructions": "Blooms in summer, 20-35 inches high. Fertilize regularly for best results. Full sun, drought tolerant.",
+      "photo": "haight_ashbury.jpg",
+      "name": "Hibiscus",
+      "season": "summer",
+      "productId": 3
+    },
+    {
+      "category": "Shrubs",
+      "instructions": "Quick-growing, herbaceous, shrub reaching up to 30 inches in height, forming a rounded, dense bush.",
+      "photo": "mona_lavender.jpg",
+      "name": "Plectranthus",
+      "season": "winter",
+      "productId": 4
+    },
+    {
+      "category": "Shrubs",
+      "instructions": "Slow growing, upright to spreading shrub. Oval, glossy, leaves and profuse winter to spring blooming flowers.",
+      "photo": "camellia.jpg",
+      "name": "Camellia Japonica",
+      "season": "winter",
+      "productId": 5
+    },
+    {
+      "category": "Shrubs",
+      "instructions": "Thorny woody vine scrambles over other plants with their hooked thorns. Pest free.",
+      "photo": "bougainvillea.jpg",
+      "name": "Bougainvillea Spectabilis",
+      "season": "winter",
+      "productId": 6
+    },
+    {
+      "category": "Shrubs",
+      "instructions": "Deep purple colored flowers bushy rounded growth habit to 3 feet tall. Plant in full sun. Water regularly.",
+      "photo": "rosa_burgundy.jpg",
+      "name": "Rosa Burgundy",
+      "season": "spring",
+      "productId": 7
+    },
+    {
+      "category": "Shrubs",
+      "instructions": "Deep purple colored flowers bushy rounded growth habit to 3 feet tall. Plant in full sun. Water regularly.",
+      "photo": "rosa_iceberg.jpg",
+      "name": "Rosa Iceberg",
+      "season": "spring",
+      "productId": 8
+    },
+    {
+      "category": "Container Plants",
+      "instructions": "They do not thrive indoors, where the light is too dim, and humidity too low, for them to grow properly.",
+      "photo": "bonsai.jpg",
+      "name": "Bonsai Tree",
+      "season": "spring",
+      "productId": 9
+    },
+    {
+      "category": "Container Plants",
+      "instructions": "Blooms continuously from early spring to first frost. Full sun or part shade, moist well-drained soil.",
+      "photo": "calibrachoa.jpg",
+      "name": "Calibrachoa Noa",
+      "season": "spring",
+      "productId": 10
+    }]
+}

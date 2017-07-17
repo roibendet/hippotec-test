@@ -1,0 +1,51 @@
+body {
+  background-color: aliceblue;
+}
+
+.main-container {
+  text-align: center;
+  margin: 3vw;
+}
+
+.input-select-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 3vw;
+}
+.input-select-design {
+  margin-left: 1vw;
+  border: none;
+  border-radius: 5vw;
+  box-shadow: 0 0 0 1px rgba(64, 94, 255, 0.3);
+}
+.input-select-design:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(64, 94, 255, 0.7);
+}
+
+.flower-picture {
+  background-size: cover;
+  background: no-repeat center center;
+  width: 25vw;
+  height: 25vw;
+  transition: all 150ms linear;
+}
+
+.flower-picture:hover {
+  transform: scale(1.07,1.07);
+}
+
+.flowers-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.flower-container {
+  margin: 10px;
+  width: 25vw;
+  height: 25vw;
+  display: table;
+}

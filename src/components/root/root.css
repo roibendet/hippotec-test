@@ -1,0 +1,26 @@
+.flower-picture {
+  background-size: cover;
+  background: no-repeat center center;
+  width: 25vw;
+  height: 25vw;
+
+}
+
+.input-select-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.flowers-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.flower-container {
+  margin: 20px;
+  width: 25vw;
+  height: 25vw;
+  display: table;
+}
